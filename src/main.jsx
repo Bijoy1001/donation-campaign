@@ -9,6 +9,7 @@ import Root from './components/Root/Root';
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Donation from './components/Donation/Donation';
+import ShowDetail from './components/ShowDetail/ShowDetail';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path:'/Statistics',
         element:<Statistics></Statistics>
+      },
+      {
+        path:'/ShowDetail/:id',
+        element:<ShowDetail></ShowDetail>
       }
      
     ]
