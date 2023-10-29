@@ -2,8 +2,8 @@
 
 const Statistics = () => {
     return (
-        <div>
-            <h1>This is Statistics page</h1>
+        <div className="flex justify-center items-center mt-80 text-2xl font-bold ">
+            <h1>Updating.....</h1>
         </div>
     );
 };

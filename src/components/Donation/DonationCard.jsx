@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const DonationCard = ({show}) => {
@@ -9,9 +10,11 @@ const DonationCard = ({show}) => {
             <h1 className=" font-normal text-sm h-6 w-16 rounded  text-center" style={{backgroundColor:category_bg_color, color:text_color}} >{category}</h1>
             <h1 className="card-title font-bold">{title}</h1>
             <p className="" style={{color:text_color}}>{price}</p>
+            <Link to={`/ShowDetail/${id}`}>
             <div className="card-actions justify-start">
             <button className="btn text-white" style={{background:button_bg_color}}>View Details</button>
             </div>
+            </Link>
         </div>
         </div>
     );
