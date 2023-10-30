@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <div className="navbar bg-base-100">
         <div className="flex-1">
-          <img src="/src/assets/img/Logo.png" alt="" />
+          <img src="https://i.ibb.co/JkwRQ87/Logo.png" alt="" />
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
@@ -24,4 +24,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Header; 
