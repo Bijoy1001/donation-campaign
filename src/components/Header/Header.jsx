@@ -4,16 +4,16 @@ const Header = () => {
 
     const links = <>
       <li><NavLink to='/'>Home</NavLink></li>
-      <li><NavLink to='/Donation'>Donation</NavLink></li>
-      <li><NavLink to='/Statistics'>Statistics</NavLink></li>
+      <li><NavLink to='/order'>Order</NavLink></li>
+      <li><NavLink to='/login'>Login</NavLink></li>
     </>
    
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-[#242327]">
         <div className="flex-1">
-          <img src="https://i.ibb.co/JkwRQ87/Logo.png" alt="" />
+          <img className="w-16" src="https://i.ibb.co/qrbsJ5j/logo-no-background.png" alt="" />
         </div>
-        <div className="flex-none">
+        <div className="flex-none text-white">
           <ul className="menu menu-horizontal px-1">
             {links}
             <li>

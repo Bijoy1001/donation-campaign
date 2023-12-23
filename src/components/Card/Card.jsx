@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({card}) => {
    
-const {id, picture, title, category, category_bg_color, text_color, card_bg_color} = card;
+const {id, picture, price, title, category, category_bg_color, text_color, card_bg_color} = card;
 
 
     return (
@@ -10,11 +10,11 @@ const {id, picture, title, category, category_bg_color, text_color, card_bg_colo
         
        <Link to={`/ShowDetail/${id}`}>
        
-       <div className="card border rounded" style={{color:card.text_color}}>
+       <div className="card rounded" style={{color:card.text_color}}>
             <figure><img className="w-full" src={card.picture} alt="Shoes" /></figure>
             <div className="card-body">
-                <h1 className=" font-normal text-sm h-6 w-16 rounded  text-center" style={{backgroundColor: card.category_bg_color}}>{card.category}</h1>
-                <p className="font-bold text-start">{card.title}</p>
+                <h1 className=" text-center rounded" style={{backgroundColor: card.category_bg_color}}>{card.category}</h1>
+                <p className="font-bold text-start">{card.price}</p>
             </div>
          </div>
        

@@ -7,9 +7,10 @@ import {
 } from "react-router-dom";
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
-import Statistics from './components/Statistics/Statistics';
-import Donation from './components/Donation/Donation';
 import ShowDetail from './components/ShowDetail/ShowDetail';
+import Login from './components/Login/Login';
+import Order from './components/Order/Order';
+import SignUp from './components/Login/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -21,14 +22,18 @@ const router = createBrowserRouter([
         element:<Home></Home> 
       },
       {
-        path:'/Donation',
-        element:<Donation></Donation>,
+        path:'/order',
+        element:<Order></Order>,
         loader: () => fetch('/cardDetail.json')
       },
       {
-        path:'/Statistics',
-        element:<Statistics></Statistics>
+        path:'/login',
+        element:<Login></Login>
         
+      },
+      {
+        path:'/singup',
+        element:<SignUp></SignUp>
       },
       {
         path:'/ShowDetail/:id',

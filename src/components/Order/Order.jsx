@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import DonationCard from "./DonationCard";
+import DonationCard from "./OrderCard";
 
 
 
 
-const Donation = () => {
+const Order = () => {
    
     const [donation, setDonations] = useState ([]);
     const [noFound, setNofound] = useState(false);
@@ -58,4 +58,4 @@ const Donation = () => {
    
 };
 
-export default Donation;
+export default Order;
